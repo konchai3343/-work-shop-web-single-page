@@ -2,18 +2,15 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    width: auto;
 }
 
 .head-top {
     border: 1px solid;
-    display: flex;
-    width: 100%;
-}
-
-.user {
+    width: auto;
     display: flex;
     align-items: center;
-    width: 300px;
+    padding: 0px 20px 0px 20px;
 }
 
 .avatar {
@@ -21,23 +18,19 @@ body {
     padding: 10px;
 }
 
-.head-item {
+.show-user {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
-}
-
-.head-item a {
-    padding: 15px;
-    font-size: 18px;
+    justify-content: flex-end;
 }
 
 .head-bottom {
     border: 1px solid;
-    height: 200px;
-    text-align: center;
-    padding: auto;
+    padding-bottom: 30px;
+    height: 300px;
+    display: grid;
+    place-items: center;
 }
 
 .head-bottom h1 {
@@ -53,9 +46,13 @@ body {
     width: 100%;
 }
 
+.content ,a ,p {
+    font-size: 25px;
+}
+
 .content section {
     border: 1px solid;
-    padding-left: 20px;
+    padding: 20px;
 }
 
 .content .con-side {
