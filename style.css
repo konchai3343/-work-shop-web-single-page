@@ -1,60 +1,77 @@
 body {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: auto;
+    box-sizing: border-box;
 }
 
-.head-top {
+header {
     border: 1px solid;
-    width: auto;
-    display: flex;
-    align-items: center;
-    padding: 0px 20px 0px 20px;
 }
 
 .avatar {
-    height: 50px;
-    padding: 10px;
-}
-
-.show-user {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.head-bottom {
-    border: 1px solid;
-    padding-bottom: 30px;
-    height: 300px;
-    display: grid;
-    place-items: center;
-}
-
-.head-bottom h1 {
-    font-size: 60px;
-}
-
-.head-bottom a {
-    font-size: 20px;
-}
-
-.content {
-    display: flex;
-    width: 100%;
-}
-
-.content ,a ,p {
-    font-size: 25px;
-}
-
-.content section {
-    border: 1px solid;
+    width: 50px;
     padding: 20px;
 }
 
-.content .con-side {
-    width: 35%;
+.titleName {
+    text-align: center;
+}
+
+.show-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+
+section {
+    border: 1px solid;
+    padding: 0px 0px 10px 10px;
+}
+
+footer {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-detail {
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .head-top {
+        border: 1px solid;
+        display: flex;
+        padding-left: 10px
+    }
+    .show-user {
+        width: 100%;
+        justify-content: end;
+        padding-right: 20px;
+    }
+    .head-bottom {
+        height: 300px;
+    }
+    .content {
+        display: flex;
+    }
+    section {
+        width: 100%;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 }
