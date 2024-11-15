@@ -4,6 +4,10 @@ body {
     box-sizing: border-box;
 }
 
+a, li, p {
+    font-size: 20px;
+}
+
 header {
     border: 1px solid;
 }
